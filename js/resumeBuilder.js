@@ -42,10 +42,19 @@ work.employer = "employer";
 work.years = "years working";
 work.city = "WorkCity";
 
-var education = {};
-education["school"] = "school name";
-education["years"] = "years educated";
-education["city"] = "SchoolCity";
+var education = {
+  "schools" : [
+    {
+      "name" : "School",
+      "city" : "SchoolCity",
+      "degree" : "degree"
+    }
+  ]
+};
+
+education["schools"]["school"] = "school name";
+education["schools"]["years"] = "years educated";
+education["schools"]["city"] = "SchoolCity";
 
 var formattedEmployer = HTMLworkEmployer.replace('%data', work.employer);
 $("#workExperience").append(formattedEmployer);
