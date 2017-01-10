@@ -36,3 +36,17 @@ $("#header").append(formattedBlog);
 $("#header").append(formattedLocation);
 $("#header").append(formattedBioPic);
 
+var work = {};
+work.position = "work position";
+work.employer = "employer";
+work.years = "years working";
+work.city = "WorkCity";
+
+var education = {};
+education["school"] = "school name";
+education["years"] = "years educated";
+education["city"] = "SchoolCity";
+
+var formattedEmployer = HTMLworkEmployer.replace('%data', work.employer);
+$("#workExperience").append(formattedEmployer);
+$("#education").append(education["school"]);
